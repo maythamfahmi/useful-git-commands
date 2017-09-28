@@ -8,8 +8,8 @@ Useful links:
  * https://try.github.io/levels/1/challenges/1
 
 #### Urls format
- * Github -> git@github.com:<account>/<repoName>.git
- * Bitbucket -> git@bitbucket.org:<account>/<repoName>.git
+ * Github -> `git@github.com:<account>/<repoName>.git`
+ * Bitbucket -> `git@bitbucket.org:<account>/<repoName>.git`
 
 #### Git ignore
 https://www.gitignore.io
