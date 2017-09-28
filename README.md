@@ -2,41 +2,49 @@ Useful links:
 
  * http://ndpsoftware.com/git-cheatsheet.html
  * https://git-scm.com/doc
- * https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf
+ * https://github.com/github/training-kit/tree/master/downloads
+ * https://education.github.com/git-cheat-sheet-education.pdf
  * http://ohshitgit.com/
  * https://try.github.io/levels/1/challenges/1
 
-###…or create a new repository on the command line
+#### Urls format
+Github -> git@github.com:<account>/<repoName>.git
+Bitbucket -> git@bitbucket.org:<account>/<repoName>.git
+
+#### Git ignore
+https://www.gitignore.io
+
+#### Create a new repository on the command line
 ```
-echo "# useful-git-commands" >> README.md
+echo "# <repoName>" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
+git remote add origin git@github.com:<account>/<repoName>.git
+git push -u origin master
+```
+
+#### Push an existing repository from the command line
+```
 git remote add origin git@github.com:maythamfahmi/useful-git-commands.git
 git push -u origin master
 ```
 
-###…or push an existing repository from the command line
-```
-git remote add origin git@github.com:maythamfahmi/useful-git-commands.git
-git push -u origin master
-```
-
-###Clone repo from one server to another including subfolders:
+#### Clone repo from one server to another server including subfolders:
 ```
 git clone --mirror GitURL
 git remote add NEW-REMOTE GitURL
 git push  NEW-REMOTE --mirror
 ```
 
-###Set/Change url
+#### Set/Change url
 ```
 change url  -> git remote set-url origin git@bitbucket.org:maytham/mytrip.git
 set new url -> git remote add origin git@bitbucket.org:maytham/mytrip.git
 rem remove  -> git remote remove master
 ```
 
-###My daily push rutine for new and existing projects
+#### My daily push rutine for new and existing projects
 create new repo in github/bitbucket
 ```
 git clone GitURL
@@ -52,7 +60,7 @@ git commit -m "basic note"
 git push -u origin --all
 ```
 
-###How to git clone specific tag
+#### How to git clone specific tag
 ```
 git clone GitURL
 git tag -l
@@ -70,54 +78,54 @@ git log --tags --simplify-by-decoration --pretty="format:%ai %d"
 
 ```
 
-###Create and Checkout a New Branch
+#### Create and Checkout a New Branch
 ```
 #branches from currently checked out directory
 git checkout -b <branchName>
 ```
 
-###Checkout a Remote Branch
+#### Checkout a Remote Branch
 ```
 git checkout -b <localBranchName> origin/<remoteBranchName>
 ```
 
-###Abort Changes of a File
+#### Abort Changes of a File
 ```
 git checkout -- <fileName>
 ```
 
-###Modify the Previous Commit's Message
+#### Modify the Previous Commit's Message
 ```
 git commit --amend
 ```
 
-###Partial Change Checkin
+#### Partial Change Checkin
 ```
 git add --edit
 ```
 
-###Undo the Previous Commit
+#### Undo the Previous Commit
 ```
 git revert HEAD^
 ```
 
-###Temporarily Stash Changes, Restore Later
+#### Temporarily Stash Changes, Restore Later
 ```
 # After changes have been made...
 git stash
 
 # Do some other stuff here, like switch branches, merge other changes, etc.
 
-#Re-apply the changes
+# Re-apply the changes
 git stash pop
 ```
 
-###Delete a Remote Branch
+#### Delete a Remote Branch
 ```
 git push origin :<branchName>
 ```
 
-###Pull in the Latest from a Shared Repository
+#### Pull in the Latest from a Shared Repository
 ```
 # Add a remote branch
 git remote add <remoteName> <gitAddress>
@@ -127,7 +135,7 @@ git remote add <remoteName> <gitAddress>
 git fetch <remoteName>
 ```
 
-###Tagging, Deleting, and Pushing Tags
+#### Tagging, Deleting, and Pushing Tags
 ```
 # Create a Tag
 git tag <tagName>
@@ -139,7 +147,7 @@ git tag -d <tagName>
 git push --tags
 ```
 
-###Who F'd it All Up?
+#### Who F'd it All Up?
 ```
 git blame <fileName>
 ```
