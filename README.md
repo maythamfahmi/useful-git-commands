@@ -6,6 +6,7 @@ Useful links:
  * https://education.github.com/git-cheat-sheet-education.pdf
  * http://ohshitgit.com/
  * https://try.github.io/levels/1/challenges/1
+ * https://orga.cat/posts/most-useful-git-commands
 
 #### SSH Urls format
  * Github -> `git@github.com:<account>/<repoName>.git`
