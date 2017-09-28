@@ -7,7 +7,7 @@ Useful links:
  * http://ohshitgit.com/
  * https://try.github.io/levels/1/challenges/1
 
-#### Urls format
+#### SSH Urls format
  * Github -> `git@github.com:<account>/<repoName>.git`
  * Bitbucket -> `git@bitbucket.org:<account>/<repoName>.git`
 
